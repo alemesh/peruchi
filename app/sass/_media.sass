@@ -3,23 +3,96 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1400px)
+    .header
+      min-height: 680px
+
+
+/* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
 	/**/
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
+	.form-hold
+      border-radius: 0
+      .form-row-wrap
+        justify-content: center
+      .form-row
+        width: 70%
+        margin-bottom: 15px
+      .form-control
+        height: 40px
+        font-size: 18px
+        border-radius: 0
+      .btn
+        height: 50px
+        font-size: 18px
+
+
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
+    .header
+      .wrap-logo
+        position: relative
+        display: flex
+        justify-content: center
+        margin-bottom: 30px
+      .wrap-content
+        .title
+          font-size: 35px
+        p
+          font-size: 28px
+    .form-hold
+      .form-row
+        width: 80%
+
+    .we-specialize-section
+      background-image: url(../img/background-we-specialize-mobile.png)
+      margin-top: -115px
+      .main-holder
+        max-width: 500px
+      ul
+        margin-bottom: 20px
+      li
+        width: 50%
+
+
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
+    .header
+      min-height: 550px
+      .wrap-content
+        .title
+          font-size: 25px
+        p
+          font-size: 20px
+          line-height: 1.6
+    .form-hold
+      padding: 15px 32px
+      .form-row
+        width: 100%
+
+    .proci-productions-section
+      padding: 30px 0 50px
+      .wrap-title
+        margin-bottom: 20px
+        h3
+          font-size: 26px
+      .wrap-description
+        p
+          font-size: 17px
+          line-height: 1.4
+    .we-specialize-section
+      .wrap-title
+        h3
+          font-size: 24px
+
 
 
 /* Custom, iPhone Retina */
