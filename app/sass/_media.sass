@@ -63,26 +63,50 @@
 
     .we-specialize-section
       background-image: url(../img/background-we-specialize-mobile.png)
-      margin-top: -115px
+      margin-top: -130px
       .main-holder
         max-width: 500px
       ul
         margin-bottom: 20px
       li
         width: 50%
+        margin-bottom: 0
 
     .proci-productions-section
       background: #592f14
 
     .partners-section
+      .wrap-title
+        font-size: 26px
+        margin-bottom: 20px
+        margin-top: 30px
+      .wrap-img
+        img
+          max-height: 150px
       .wrap-both
+        padding-top: 30px
         h3
           font-size: 28px
+        .mobile-button
+          display: flex
+        .desctop-button
+          display: none
+
+      li
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-bottom: 0
+    .slick-list
+      .draggable
+        height: auto
 
     .footer
       .footer-content
         flex-wrap: wrap
         margin: 0 -5px 10px
+
+
 
 
 /* Extra Small Devices, Phones */
@@ -97,6 +121,8 @@
           line-height: 1.6
     .form-hold
       padding: 15px 32px
+      h3
+        font-size: 22px
       .form-row
         width: 100%
 
@@ -105,7 +131,7 @@
       .wrap-title
         margin-bottom: 20px
         h3
-          font-size: 26px
+          font-size: 24px
       .wrap-description
         p
           font-size: 17px
@@ -116,6 +142,8 @@
           font-size: 24px
 
     .partners-section
+      .wrap-title
+        font-size: 22px
       .wrap-both
         h3
           font-size: 23px
@@ -132,11 +160,43 @@
       .desctop
         display: none
 
+    .thanks-page
+      .header
+        background-image: url(../img/background-thanks-page-mobile.png) !important
 
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
-	/**/
+    .header
+      .wrap-content
+        .title
+          font-size: 20px
+        p
+          font-size: 18px
+
+    .form-hold
+      h3
+        font-size: 17px
+
+    .proci-productions-section
+      .wrap-title
+        h3
+          font-size: 20px
+
+    .we-specialize-section
+      .wrap-title
+        h3
+          font-size: 20px
+      .wrap-text
+        p
+          font-size: 15px
+
+    .partners-section
+      .wrap-title
+        font-size: 17px
+      .wrap-both
+        h3
+          font-size: 20px
 
 
 /*==========  Mobile First  ==========*/

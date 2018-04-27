@@ -302,21 +302,33 @@ ul
 		list-style: none
 		width: 33.3%
 		display: flex
-		justify-content: center
+		justify-content: flex-start
 		align-items: center
 		flex-direction: column
 		margin-bottom: 20px
 		padding: 0 8px
+		min-height: 180px
 	.wrap-img
+		//background: white
 		position: relative
 		width: 150px
 		height: 110px
 		display: flex
 		justify-content: center
 		align-items: center
+		margin: 0 0 10px
+		transition: all .5s ease
+		&:hover
+			transform: scale(.9)
+			//background-color: #fe7b84
+			text-decoration: none
+			color: #111
+
 	.wrap-text
 		max-width: 130px
 		text-align: center
+		padding-top: 10px
+		border-top: 2px solid white
 		p
 			font-family: "OpenSansHebrew-Regular"
 			font-size: 18px
@@ -360,6 +372,17 @@ ul
 		direction: rtl
 		text-align: center
 		padding-top: 50px
+		position: relative
+		&:after
+			content: ''
+			width: 100px
+			height: 2px
+			background: #ec7c23
+			position: absolute
+			top: 0
+			left: 50%
+			transform: translate(-50%,-50%)
+
 		h3
 			font-family: "OpenSansHebrew-Bold"
 			font-size: 34px
@@ -388,6 +411,8 @@ ul
 				background-color: #3c200e
 				text-decoration: none
 				box-shadow: 1.414px 1.414px 50px 0px rgba(77, 77, 77, 0.3)
+		.mobile-button
+			display: none
 
 .footer
 	padding-top: 130px
@@ -415,6 +440,12 @@ ul
 		font-size: 22px
 		line-height: 1.6
 		color: white
+		margin: 0 0 10px
+		transition: all .5s ease
+		&:hover
+			transform: scale(.8)
+			text-decoration: none
+			color: #111
 	.footer-content
 		padding: 0
 		position: relative
@@ -450,14 +481,100 @@ ul
 		display: none
 
 
+//============================ slick slider =============================
+
+.slick-slider
+	direction: ltr
+	position: relative
+	display: block
+	box-sizing: border-box
+	-webkit-touch-callout: none
+	-webkit-user-select: none
+	-khtml-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+	-ms-touch-action: pan-y
+	touch-action: pan-y
+	-webkit-tap-highlight-color: transparent
+
+.slick-list
+	position: relative
+	overflow: hidden
+	display: block
+	margin: 0
+	padding: 0
+	width: 100%
+	transform: translate3d(0, 0, 0)
+	&:focus
+		outline: none
+	&.dragging
+		cursor: pointer
+		cursor: hand
+
+.slick-track
+	position: relative
+	left: 0
+	top: 0
+	display: block
+	transform: translate3d(0, 0, 0)
+
+	&:before,
+	&:after
+		content: ""
+		display: table
+
+	&:after
+		clear: both
+
+.slick-slide
+	float: left
+	//height: 100%
+	min-height: 230px
+
+.slick-arrow
+	position: absolute
+	border: none
+	outline: none
+	top: 45%
+	width: 25px
+	height: 25px
+	border-left: 5px solid #3c200e
+	border-top: 5px solid #3c200e
+	z-index: 99999
+
+.slick-next
+	right: 20px
+	transform: translateY(-50%) rotate(135deg)
+.slick-prev
+	left: 20px
+	transform: translateY(-50%) rotate(-45deg)
+
+.slick-arrow.slick-hidden
+	display: none
+
+.slick-next:before, .slick-prev:before
+	content: none
 
 
 
 
-
-
-
-
+.thanks-page
+  .wrap-logo
+    display: flex
+    justify-content: center
+    margin-top: 30px
+    margin-bottom: 50px
+  .header
+    .logo-container
+      background: none
+    .wrap-content
+      .title
+        font-size: 47px
+        color: #ec7c23
+      p
+        font-size: 29px
+        color: #ec7c23
 
 
 

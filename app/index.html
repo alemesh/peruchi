@@ -31,13 +31,13 @@
 
 <body>
 
-	<div class="wrap-container"  id="form-scrol">
+	<div class="wrap-container" id="form-scrol-desctop">
 		<div class="wrap-header">
 			<div class="header" style="background-image: url(img/background-header2.png)">
 				<div class="main-holder">
 					<div class="wrap-logo">
 						<div class="logo-container">
-							<img src="img/logo.png" alt="logo" class="logo">
+							<a href="#"><img src="img/logo.png" alt="logo" class="logo"></a>
 						</div>
 					</div>
 					<div class="wrap-content">
@@ -46,7 +46,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="wrap-form-hold">
+			<div class="wrap-form-hold" id="form-scrol">
 				<div class="main-holder">
 					<div class="form-hold">
 						<h3>לפגישה וקבלת פרטים נוספים, השאירו פרטים:</h3>
@@ -62,7 +62,7 @@
 									<input name="email" required class="form-control" type="email" placeholder="*מייל">
 								</div>
 								<div class="form-row">
-									<input name="lname" class="form-control" required data-required="true" type="text" pattern="^[A-Zא-תa-z ]{1,50}$"  placeholder="*שם חברה">
+									<input name="companyname" class="form-control" required data-required="true" type="text" pattern="^[A-Zא-תa-z ]{1,50}$"  placeholder="*שם חברה">
 								</div>
 								<div class="form-row wrap-btn">
 									<input type="submit" class="btn" value="שלח">
@@ -147,7 +147,7 @@
 					<div class="wrap-title">
 						<h3>בין הלקוחות המרוצים שלנו</h3>
 					</div>
-					<ul>
+					<ul class="slick-slider">
 						<li>
 							<div class="wrap-img">
 								<img src="img/partner-1.png" alt="">
@@ -181,6 +181,41 @@
 						<li>
 							<div class="wrap-img">
 								<img src="img/logo.png" alt="">
+							</div>
+						</li>
+						<li>
+							<div class="wrap-img">
+								<img src="img/partner-1.png" alt="">
+							</div>
+						</li>
+						<li>
+							<div class="wrap-img">
+								<img src="img/partner-1.png" alt="">
+							</div>
+						</li>
+						<li>
+							<div class="wrap-img">
+								<img src="img/partner-1.png" alt="">
+							</div>
+						</li>
+						<li>
+							<div class="wrap-img">
+								<img src="img/partner-1.png" alt="">
+							</div>
+						</li>
+						<li>
+							<div class="wrap-img">
+								<img src="img/partner-1.png" alt="">
+							</div>
+						</li>
+						<li>
+							<div class="wrap-img">
+								<img src="img/partner-1.png" alt="">
+							</div>
+						</li>
+						<li>
+							<div class="wrap-img">
+								<img src="img/partner-1.png" alt="">
 							</div>
 						</li>
 						<li>
@@ -222,7 +257,8 @@
 					<div class="wrap-both">
 						<h3>מעוניינים שנפיק עבורכם את הדבר הגדול הבא?</h3>
 						<div class="wrap-buton button-mobile">
-							<a href="#form-scrol">צרו קשר</a>
+							<a href="#form-scrol-desctop" class="desctop-button">צרו קשר</a>
+							<a href="#form-scrol" class="mobile-button">צרו קשר</a>
 						</div>
 					</div>
 				</div>
