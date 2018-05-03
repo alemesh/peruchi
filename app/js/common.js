@@ -2,17 +2,18 @@ $(function() {
 
 	// Custom JS
 
-    // initSlickCarousel();
-    if ($(window).width() < 768) {
-        initSlickCarousel();
 
-    }
-    // initSlickCarousel();
-    $( window ).resize(function() {
-        if ($(window).width() < 768) {
-            initSlickCarousel();
-        }
-    });
+    // if ($(window).width() < 768) {
+    //     initSlickCarousel();
+    //
+    // }
+    // // initSlickCarousel();
+    // $( window ).resize(function() {
+    //     if ($(window).width() < 768) {
+    //         initSlickCarousel();
+    //     }
+    // });
+    initSlickCarousel();
     initSlickCarousel2();
 
 
@@ -95,8 +96,14 @@ function initSlickCarousel() {
         responsive: [{
             breakpoint: 768,
             settings: {
-                slidesToScroll: 1,
-                slidesToShow: 1
+                slidesToScroll: 3,
+                slidesToShow: 3,
+                autoplay: true,
+                autoplaySpeed: true,
+                adaptiveHeight: true,
+                // infinite: true,
+                // swipe: true,
+                speed: 5000
             }
         }]
     });

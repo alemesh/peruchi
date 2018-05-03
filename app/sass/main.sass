@@ -386,16 +386,18 @@ ul
 		z-index: 25
 		width: 15px
 		height: 15px
+        right: 20px
+        transform: translateY(-50%) rotate(135deg)
 		&:before
-			//content: ''
+			content: ''
 			//border-bottom: 3px solid white
 			//border-right: 3px solid white
-			//width: 15px
-			//height: 15px
-			//display: inline-block
-			//vertical-align: middle
-			//transform: rotate(-45deg)
-			//position: relative
+			width: 50px
+			height: 50px
+			display: inline-block
+			vertical-align: middle
+			transform: rotate(180deg)
+			position: relative
 	.slick-prev
 		//display: none !important
 		//background: #f3b940
@@ -404,16 +406,18 @@ ul
 		z-index: 25
 		width: 15px
 		height: 15px
+        left: 20px
+        transform: translateY(-50%) rotate(-45deg)
 		&:before
-			//content: ''
+			content: ''
 			//border-bottom: 3px solid white
 			//border-left: 3px solid white
-			//width: 15px
-			//height: 15px
-			//display: inline-block
-			//vertical-align: middle
-			//transform: rotate(45deg)
-			//position: relative
+			width: 50px
+			height: 50px
+			display: inline-block
+			vertical-align: middle
+			transform: rotate(90deg)
+			position: relative
 	.slick-arrow
 		position: absolute
 		border: none
@@ -428,8 +432,17 @@ ul
 		border-top: 2px solid white
 		z-index: 99999
 
-	.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus
-		//background: #f3b940
+
+
+
+
+
+
+
+
+
+
+
 
 //==================================================================
 
@@ -438,6 +451,7 @@ ul
 .partners-section
 	.main-holder
 		max-width: 1050px
+		padding: 0
 	.wrap-title
 		direction: rtl
 		text-align: center
@@ -467,6 +481,11 @@ ul
 		//max-height: 150px
 		img
 			max-height: 80px
+
+	.parthers-img-section
+		margin-bottom: 30px
+	.parthers-img-section-mobile
+		display: none
 
 	.wrap-both
 		direction: rtl
@@ -632,29 +651,29 @@ ul
 	//height: 100%
 	min-height: 230px
 
-.slick-arrow
-	position: absolute
-	border: none
-	outline: none
-	top: 45%
-	width: 25px
-	height: 25px
-	border-left: 5px solid #3c200e
-	border-top: 5px solid #3c200e
-	z-index: 99999
-
+//.slick-arrow
+//	position: absolute
+//	border: none
+//	outline: none
+//	top: 45%
+//	width: 25px
+//	height: 25px
+//	border-left: 5px solid #3c200e
+//	border-top: 5px solid #3c200e
+//	z-index: 99999
+//
 .slick-next
 	right: 20px
 	transform: translateY(-50%) rotate(135deg)
 .slick-prev
 	left: 20px
 	transform: translateY(-50%) rotate(-45deg)
-
-.slick-arrow.slick-hidden
-	display: none
-
-.slick-next:before, .slick-prev:before
-	content: none
+//
+//.slick-arrow.slick-hidden
+//	display: none
+//
+//.slick-next:before, .slick-prev:before
+//	content: none
 
 
 
