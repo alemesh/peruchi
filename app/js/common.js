@@ -13,7 +13,7 @@ $(function() {
             initSlickCarousel();
         }
     });
-
+    initSlickCarousel2();
 
 
 });
@@ -42,27 +42,41 @@ $(function() {
 
 
 
+//slick slider
+
+// (function($) {
+//     $('.variable-width').slick({
+//         dots: false,
+//         infinite: true,
+//         speed: 300,
+//         slidesToShow: 1,
+//         centerMode: true,
+//         variableWidth: true,
+//         autoplay: true,
+//         autoplaySpeed: 3000
+//     });
+// })(jQuery);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// slick init
+function initSlickCarousel2() {
+    jQuery('.variable-width').slick({
+        slidesToScroll: 1,
+        slidesToShow: 3,
+        adaptiveHeight: true,
+        rows: 0,
+        prevArrow: '<span class="slick-prev"></span>',
+        nextArrow: '<span class="slick-next"></span>',
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToScroll: 1,
+                slidesToShow: 1
+            }
+        }]
+    });
+}
 
 
 
