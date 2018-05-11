@@ -27,7 +27,7 @@ $companyname = $_POST['companyname'];
     $messageText =	'First Name: '.$ufname."\n".
         'Phone: '.$uphone."\n".
         'Email: '.$umail."\n".
-        'Last Name: '.$companyname."\n";
+        'Company name: '.$companyname."\n";
 
 
 // send email
@@ -41,6 +41,16 @@ $messageHeaders = "From: " . $senderName . " <" . $senderEmail . ">\r\n"
 foreach ($targetEmail as $val){
     mail($val, $messageSubject, $messageText, $messageHeaders);
 }
+
+
+//========== xml backups lids ================
+
+$today = date("F j, Y, g:i a");
+
+$file = 'sample.csv';
+$tofile = "$ufname;$uphone;$umail;$companyname;$today\n";
+$bom = "\xEF\xBB\xBF";
+@file_put_contents($file, $bom . $tofile . file_get_contents($file));
 
 
 $redirectToTnxPage = 'http://campaign.gofmans.co.il/landing-peruchi/thanks-page.html?Lead=true';
