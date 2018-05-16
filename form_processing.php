@@ -4,7 +4,7 @@
 $senderName = 'Peruchi';
 $senderEmail = $_SERVER['SERVER_NAME'];
 $targetEmail = [];
-$targetEmail = [ 'office@gofmans.co.il', 'ravit@gofmans.co.il', 'eli@gofmans.co.il', 'israel@gofmans.co.il', 'sharli@peruchi.com'];
+$targetEmail = [ 'office@gofmans.co.il', 'ravit@gofmans.co.il', 'eli@gofmans.co.il', 'israel@gofmans.co.il'];
 //$targetEmail = ['alemesh@acceptic.com'];
 $messageSubject = 'Message from web-site - '. $_SERVER['SERVER_NAME'];
 $redirectToReferer = true;
@@ -48,7 +48,7 @@ foreach ($targetEmail as $val){
 $today = date("F j, Y, g:i a");
 
 $file = 'sample.csv';
-$tofile = "$ufname;$uphone;$umail;$companyname;$companyname;$today\n";
+$tofile = "$ufname;$uphone;$umail;$companyname;$today\n";
 $bom = "\xEF\xBB\xBF";
 @file_put_contents($file, $bom . $tofile . file_get_contents($file));
 
