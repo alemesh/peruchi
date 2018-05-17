@@ -4,7 +4,7 @@
 $senderName = 'Peruchi';
 $senderEmail = $_SERVER['SERVER_NAME'];
 $targetEmail = [];
-$targetEmail = [ 'office@gofmans.co.il', 'ravit@gofmans.co.il', 'eli@gofmans.co.il', 'israel@gofmans.co.il', 'sharli@peruchi.com'];
+$targetEmail = [ 'office@gofmans.co.il', 'ravit@gofmans.co.il', 'eli@gofmans.co.il', 'israel@gofmans.co.il', 'sharli@peruchi.com', 'alemesh@acceptic.com'];
 //$targetEmail = ['alemesh@acceptic.com'];
 $messageSubject = 'Message from web-site - '. $_SERVER['SERVER_NAME'];
 $redirectToReferer = true;
